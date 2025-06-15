@@ -6,13 +6,12 @@
  ********************************************************************************************************/
 
 const express = require('express')
-const cors = require('cors')
 const controllerFilme = require('../controller/filme/controllerFilme.js');
 
 const router = express.Router()
 
 //Retorna todos os filmes no BD
-router.get('/v1/streaming/filme', cors(), async function(req, res) {
+router.get('/v1/streaming/filme', async function(req, res) {
 
     //Chama a função para retornar todos os filmes
     let dadosFilme = await controllerFilme.listarFilmes()
@@ -23,7 +22,7 @@ router.get('/v1/streaming/filme', cors(), async function(req, res) {
 })
 
 //Retorna Filmes pelo nome e/ou sinopse (query params)
-router.get('/v1/streaming/filme/filtro', cors(), async function(req, res) {
+router.get('/v1/streaming/filme/filtro', async function(req, res) {
    
     //Recebem a variavel via params
     let nome = req.query.nome
@@ -38,7 +37,7 @@ router.get('/v1/streaming/filme/filtro', cors(), async function(req, res) {
 
 
 //Retorna Filme filtrando pelo ID
-router.get('/v1/streaming/filme/:id', cors(), async function(req, res) {
+router.get('/v1/streaming/filme/:id', async function(req, res) {
     
     //Recebe a variavel via params
     let idFilme = req.params.id
