@@ -1,6 +1,6 @@
 /******************************************************************************************************************
- * Objetivo: Model responsável pela comunicação com os dados no BD
- * Data: 26/05/2024
+ * Objetivo: Model responsável pelo CRUD de dados no BD
+ * Data: 26/05/2025
  * Autor: Douglas Menezes
  * Versão: 1.0
  ******************************************************************************************************************/
