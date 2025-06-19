@@ -32,6 +32,7 @@ const listarFilmes = async function(){
 const buscarFilmeId = async function(id) {
     
     // Verifica se o ID é inválido (vazio, nulo, indefinido ou não numérico)
+    // .trim utlizado para remover espaços em branco
     if(id.trim() === '' || id == null || id == undefined || isNaN(id)){
         return MESSAGE.ERROR_REQUIRED_FIELDS 
     }else{
@@ -56,6 +57,7 @@ const buscarFilmeId = async function(id) {
     //console.log('➡️ Requisição recebida com:', { nome, sinopse })
 
     // Verifica se ambos os campos estão vazios ou contêm apenas espaços
+    // .trim utlizado para remover espaços em branco
     if ((!nome || nome.trim() === '') && (!sinopse || sinopse.trim() === '')) {
         return MESSAGE.ERROR_REQUIRED_FIELDS
     }
