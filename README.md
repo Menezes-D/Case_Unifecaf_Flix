@@ -9,24 +9,25 @@ Ela foi desenvolvida como parte de um trabalho acadêmico 🎓 com foco em:
 O projeto simula um cenário real de uma API de filmes 🎬, permitindo filtrar filmes com base em critérios específicos ou consultar detalhes de um filme por seu ID. As respostas seguem padrões HTTP 🌐 e retornam dados no formato JSON 📦.
 
 
-====================================================================================================================
+================================================================================================================================================================================
 
 🚀 Como Executar o Projeto
 
 1. Clone este repositório
 
 2. Instale as dependências:
+   
     |npm install express 
     |npm install cors
     |npm install prisma
     |npm install @prisma/client
 
-3. Configure o banco de dados MySQL
+4. Configure o banco de dados MySQL
 
-4. Ajuste o arquivo .env com suas credenciais do banco
+5. Ajuste o arquivo .env com suas credenciais do banco
 
-5. Execute o Prisma:
+6. Execute o Prisma:
     |npx prisma generate
 
-6. Rode o servidor:
+7. Rode o servidor:
     |node app.js
