@@ -8,7 +8,7 @@
 //Import do arquivo DAO
 const filmeDAO = require('../../model/DAO/filme.js')
 //Import do arquivo de messagens de erro/acerto
-const MESSAGE = require('../../message/config.js')
+const MESSAGE = require('../../modulo/config.js')
 
 //Retorna todos os Filmes
 const listarFilmes = async function(){
@@ -60,7 +60,7 @@ const buscarFilmeId = async function(id) {
         return MESSAGE.ERROR_REQUIRED_FIELDS
     }
 
-    const dadosFilme = await filmeDAO.selectByQueryFilme(nome, sinopse)
+    let dadosFilme = await filmeDAO.selectByQueryFilme(nome, sinopse)
 
     if (dadosFilme) {
         return {
