@@ -17,17 +17,23 @@ O projeto simula um cenário real de uma API de filmes 🎬, permitindo filtrar 
 
 2. Instale as dependências:
    
-    |npm install express 
+    |npm install express
+   
     |npm install cors
+   
     |npm install prisma
+   
     |npm install @prisma/client
+   
 
 4. Configure o banco de dados MySQL
 
 5. Ajuste o arquivo .env com suas credenciais do banco
 
 6. Execute o Prisma:
+   
     |npx prisma generate
 
-7. Rode o servidor:
+8. Rode o servidor:
+   
     |node app.js
